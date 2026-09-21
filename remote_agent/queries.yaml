@@ -1,0 +1,9 @@
+queries:
+  fetch_potassium_labs_all: |
+    SELECT * FROM `agents-demo-509203.lab.potassium_labs`
+    ORDER BY lab_collection_date DESC
+
+  fetch_potassium_labs_days: |
+    SELECT * FROM `agents-demo-509203.lab.potassium_labs`
+    WHERE lab_collection_date >= DATE_SUB(CURRENT_DATE(), INTERVAL {days} DAY)
+    ORDER BY lab_collection_date DESC
