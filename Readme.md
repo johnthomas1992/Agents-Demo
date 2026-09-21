@@ -1,1 +1,1 @@
-![alt text](<AI Arch.drawio.png>)
+![Architecture-Diagram](diagram/AI-Arch.png)
